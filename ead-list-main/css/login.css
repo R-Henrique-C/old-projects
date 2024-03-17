@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pequenos (Celular em pé, 576px e maior) */
+@media (max-width: 767px) {
+    body{
+        /* Cria um gradiente de violeta para azul */
+        background-image: linear-gradient(to bottom, rgb(245, 72, 179), rgb(113, 11, 172)); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* 
+    "Ctrl + F5" reseta a RAM do navegador
+    Classe = '.'
+    ID = '#' 
+    */
+
+    section{
+        /* formula a section de login */
+        width: 95%;
+        height: auto;
+        margin-left: 2.5%;
+        margin-top: 60px;
+    }
+
+    h2{
+        /* formulacao do texto em cima do formulario */
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+        font-size: 1.3em;
+        display: inline-block;
+        position: absolute; 
+        top: 10%;
+        left: 40%;
+    }
+
+    #form{
+        /* cria uma distancia entre o titulo e o formulario */
+        margin-top: 200px;
+    }
+
+    #log{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+        font-size: 1.3em;
+        font-weight: 100; /* intensidade da linha */
+        position: absolute; 
+        top: 10%;
+        right: 40%;
+    }
+
+    .campo{
+        /* formulacao dos campos do formulario */
+        width: 86%;
+        height: 45px;
+        margin-left: 7%;
+        margin-top: 30px;
+        border: 0; /* Desabilita a borda */
+        border-radius: 10px;
+        outline: none; /* Desabilita a outline da borda */
+        text-indent: 10px; /* Desloca o texto do placeholder */
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 1.3em;
+        color: rgb(107, 106, 106);
+    }
+    
+    .campo:focus::placeholder{ 
+        /* Muda a cor do placeholder quando selecionado */
+        color: white;
+    }
+
+    #buttons{
+        margin-bottom: 250px;
+    }
+
+    button{
+        /* formulacao dos botoes */
+        width: 30%;
+        height: 50px;
+        margin-left: 20%;
+        margin-top: 40px;
+        background-color: rgba(238, 30, 93, 0.877);
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 1.3em;
+        border-radius: 20px;
+        box-shadow: 0 3px rgb(65, 3, 44);
+        cursor: pointer;
+    }
+
+    button:hover{
+        /* muda a cor do botao quando o mouse estiver em cima */
+        background-color: rgb(158, 41, 133);
+    }
+
+    button:active{ 
+        /* animacoes do botão */
+        background-color: rgba(238, 30, 93, 0.877);
+        border: solid purple 2px;
+        box-shadow: 0 1px rgb(35, 3, 65);
+        transform: translateY(4px);
+    }
+
+    #noPass{
+        /* formulacao do link de 'esqueceu a senha' */
+        color: white;
+        margin-left: 60%;
+        font-size: 15px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    }
+
+    #noPass:hover{
+        color: rgb(245, 179, 212);
+    }
+
+    a{
+        color: white;
+        font-size: 1.3em;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-decoration: none;
+        margin-left: 35%;
+    }
+
+    a:hover{
+        color: rgb(245, 179, 212);
+    }
+
+    a:visited{
+        color: none;   
+    }
+
+    #nAccount{
+        margin-bottom: 50px;
+    }
+}
+
+/* médios (tablets e celular deitado, 768px e maior) */
+@media (min-width: 768px) {
+    body{
+        background: #1137e2;
+    }
+}
+
+/* Grandes (hd desktops, 992px e maior) */
+@media (min-width: 992px) {
+    body{
+        background: #e02f2f;
+    }
+}
+
+/* Maiores (full hd desktops, 1200px e maior) */
+@media (min-width: 1200px) {
+    body{
+        background: #909090;
+    }
+}

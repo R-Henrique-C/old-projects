@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Celulares pequenos em pé */
+@media (max-width: 767px) {
+    /* comeco configuracoes em comum */
+    body{
+        background-color: #E2C799;
+        font-family: 'M PLUS 1p', sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+    }
+
+    .text{
+        font-size: 1em;
+        line-height: 1.75rem;
+    }
+
+    a{
+        font-size: 1.4em;
+        color: black;
+        display: list-item;
+        margin-left: 10%;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #9A3B3B;
+    }
+
+    .listText{
+        font-size: 1.4em;
+        display: list-item;
+        margin-left: 10%;
+    }
+
+    .imgConfig{
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .imgText{
+        font-size: 0.8em;
+        color: rgb(70, 68, 68);
+    }
+
+    .hl{
+        border: 0 solid;
+        margin: 10% 0 10% 0;
+    }
+
+    .smallHl{
+        border: 0 solid;
+        margin: 5% 0 5% 0;
+    }
+
+    .smallerHl{
+        border: 0 solid;
+        margin: 3% 0 3% 0;
+    }
+    /* fim das configuracoes em comum */
+
+
+    /* comeco do cabecalho  */
+    header{
+        background-color: #C08261;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    #tittle_Container{
+        display: inline-block;
+    }
+
+    #tittle{
+        color: #9A3B3B;
+        text-align: right;
+        padding-bottom: 2%;
+    }
+
+    #vl{
+        border-left: 3px solid #F2ECBE;
+        height: 30px;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #subTittle_Container{
+        display: inline-block;
+    }
+
+    #subTittle{
+        color: #F2ECBE;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+
+    #underLine{
+        background-color: #F2ECBE;
+        width: 100%;
+        height: 5px;
+        border: none;
+    }
+    /* fim do cabecalho */
+
+
+    /* comeco do conteudo */
+    #content{
+        width: 90%;
+        margin: 5% 5% 20% 5%;
+    }
+    /* fim do conteudo */
+
+
+    /* comeco do rodape */
+    footer{
+        background-color: #9A3B3B;
+        color: #F2ECBE;
+        font-size: 0.9em;
+        border-top: 2px solid #F2ECBE;
+        padding: 5%;
+    }
+
+    .footerText{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_text{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_link{
+        color: #F2ECBE;
+        font-size: 0.9em;
+        list-style: none;
+        margin: 0;
+    }
+
+    #moreAPI_link:hover{
+        color: #C08261;
+    }
+
+    .footerLink{
+        color: #F2ECBE;
+        font-size: 0.8em;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footerLink:hover{
+        color: #C08261;
+    }
+}
+
+/* Tablets, celulares grandes em pé e celulares deitados */
+@media (min-width: 768px) {
+    /* comeco configuracoes em comum */
+    body{
+        background-color: #E2C799;
+        font-family: 'M PLUS 1p', sans-serif;
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+    }
+
+    .text{
+        font-size: 1em;
+        line-height: 1.75rem;
+    }
+
+    a{
+        font-size: 1.4em;
+        color: black;
+        display: list-item;
+        margin-left: 10%;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #9A3B3B;
+    }
+
+    .listText{
+        font-size: 1.4em;
+        display: list-item;
+        margin-left: 10%;
+    }
+
+    .imgConfig{
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .imgText{
+        font-size: 0.8em;
+        color: rgb(70, 68, 68);
+    }
+
+    .hl{
+        border: 0 solid;
+        margin: 10% 0 10% 0;
+    }
+
+    .smallHl{
+        border: 0 solid;
+        margin: 5% 0 5% 0;
+    }
+
+    .smallerHl{
+        border: 0 solid;
+        margin: 3% 0 3% 0;
+    }
+    /* fim das configuracoes em comum */
+
+
+    /* comeco do cabecalho  */
+    header{
+        background-color: #C08261;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    #tittle_Container{
+        display: inline-block;
+    }
+
+    #tittle{
+        color: #9A3B3B;
+        text-align: right;
+        padding-bottom: 2%;
+    }
+
+    #vl{
+        border-left: 3px solid #F2ECBE;
+        height: 30px;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #subTittle_Container{
+        display: inline-block;
+    }
+
+    #subTittle{
+        color: #F2ECBE;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+
+    #underLine{
+        background-color: #F2ECBE;
+        width: 100%;
+        height: 5px;
+        border: none;
+    }
+    /* fim do cabecalho */
+
+
+    /* comeco do conteudo */
+    #content{
+        width: 90%;
+        margin: 5% 5%;
+    }
+    /* fim do conteudo */
+
+
+    /* comeco do rodape */
+    footer{
+        background-color: #9A3B3B;
+        color: #F2ECBE;
+        font-size: 0.9em;
+        border-top: 2px solid #F2ECBE;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .footerText{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_text{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_link{
+        color: #F2ECBE;
+        font-size: 0.9em;
+        list-style: none;
+        margin: 0;
+    }
+
+    #moreAPI_link:hover{
+        color: #C08261;
+    }
+
+    .footerLink{
+        color: #F2ECBE;
+        font-size: 0.8em;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footerLink:hover{
+        color: #C08261;
+    }
+}
+
+/* Desktops pequenos e notebooks */
+@media (min-width: 992PX) {
+    /* comeco configuracoes em comum */
+    body{
+        background-color: #E2C799;
+        font-family: 'M PLUS 1p', sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+    }
+
+    .text{
+        font-size: 1em;
+        line-height: 1.75rem;
+    }
+
+    a{
+        font-size: 1.4em;
+        color: black;
+        display: list-item;
+        margin-left: 10%;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #9A3B3B;
+    }
+
+    .listText{
+        font-size: 1.4em;
+        display: list-item;
+        margin-left: 10%;
+    }
+
+    .imgConfig{
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .imgText{
+        font-size: 0.8em;
+        color: rgb(70, 68, 68);
+    }
+
+    .hl{
+        border: 0 solid;
+        margin: 10% 0 10% 0;
+    }
+
+    .smallHl{
+        border: 0 solid;
+        margin: 5% 0 5% 0;
+    }
+
+    .smallerHl{
+        border: 0 solid;
+        margin: 3% 0 3% 0;
+    }
+    /* fim das configuracoes em comum */
+
+
+    /* comeco do cabecalho  */
+    header{
+        background-color: #C08261;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    #tittle_Container{
+        display: inline-block;
+    }
+
+    #tittle{
+        color: #9A3B3B;
+        text-align: right;
+        padding-bottom: 2%;
+    }
+
+    #vl{
+        border-left: 3px solid #F2ECBE;
+        height: 30px;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #subTittle_Container{
+        display: inline-block;
+    }
+
+    #subTittle{
+        color: #F2ECBE;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+
+    #underLine{
+        background-color: #F2ECBE;
+        width: 100%;
+        height: 5px;
+        border: none;
+    }
+    /* fim do cabecalho */
+
+
+    /* comeco do conteudo */
+    #content{
+        width: 90%;
+        margin: 5% 5% 20% 5%;
+    }
+    /* fim do conteudo */
+
+
+    /* comeco do rodape */
+    footer{
+        background-color: #9A3B3B;
+        color: #F2ECBE;
+        font-size: 0.9em;
+        border-top: 2px solid #F2ECBE;
+    }
+
+    .footerText{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_text{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_link{
+        color: #F2ECBE;
+        font-size: 0.9em;
+        list-style: none;
+        margin: 0;
+    }
+
+    #moreAPI_link:hover{
+        color: #C08261;
+    }
+
+    .footerLink{
+        color: #F2ECBE;
+        font-size: 0.8em;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footerLink:hover{
+        color: #C08261;
+    }
+}
+
+/* Desktops grandes, Full hd */
+@media (min-width: 1200px) {
+    /* comeco configuracoes em comum */
+    body{
+        background-color: #E2C799;
+        font-family: 'M PLUS 1p', sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+    }
+
+    .text{
+        font-size: 1em;
+        line-height: 1.75rem;
+    }
+
+    a{
+        font-size: 1.4em;
+        color: black;
+        display: list-item;
+        margin-left: 1%;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #9A3B3B;
+    }
+
+    .listText{
+        font-size: 1.4em;
+        display: list-item;
+        margin-left: 1%;
+    }
+
+    .imgConfig{
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .imgText{
+        font-size: 0.8em;
+        color: rgb(70, 68, 68);
+    }
+
+    .feImg{
+        margin-left: 20%;
+        width: 80%;
+        height: auto;
+    }
+
+    .hl{
+        border: 0 solid;
+        margin: 10% 0 10% 0;
+    }
+
+    .smallHl{
+        border: 0 solid;
+        margin: 5% 0 5% 0;
+    }
+
+    .smallerHl{
+        border: 0 solid;
+        margin: 3% 0 3% 0;
+    }
+    /* fim das configuracoes em comum */
+
+
+    /* comeco do cabecalho  */
+    header{
+        background-color: #C08261;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    #tittle_Container{
+        display: inline-block;
+    }
+
+    #tittle{
+        color: #9A3B3B;
+        text-align: right;
+        padding-bottom: 2%;
+    }
+
+    #vl{
+        border-left: 3px solid #F2ECBE;
+        height: 30px;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #subTittle_Container{
+        display: inline-block;
+    }
+
+    #subTittle{
+        color: #F2ECBE;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+
+    #underLine{
+        background-color: #F2ECBE;
+        width: 100%;
+        height: 5px;
+        border: none;
+    }
+    /* fim do cabecalho */
+
+
+    /* comeco do conteudo */
+    #content{
+        width: 90%;
+        margin: 5% 5% 20% 5%;
+    }
+    /* fim do conteudo */
+
+
+    /* comeco do rodape */
+    footer{
+        background-color: #9A3B3B;
+        color: #F2ECBE;
+        font-size: 0.9em;
+        border-top: 2px solid #F2ECBE;
+        width: 100%;
+        height: auto;
+    }
+
+    .footerText{
+        font-size: 0.9em;
+    }
+
+    #moreAPI{
+        width: 20%;
+    }
+
+    #moreAPI_text{
+        font-size: 0.9em;
+    }
+
+    #moreAPI_link{
+        color: #F2ECBE;
+        font-size: 0.9em;
+        list-style: none;
+        margin: 0;
+    }
+
+    #moreAPI_link:hover{
+        color: #C08261;
+    }
+
+    #refContainer{
+        width: 20%;
+    }
+
+    .footerLink{
+        color: #F2ECBE;
+        font-size: 0.8em;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footerLink:hover{
+        color: #C08261;
+    }
+}
